@@ -18,6 +18,8 @@ export default {
   /*
   ** Global CSS
   */
+  target: 'static',
+  
   css: [
     '@/assets/scss/index.scss',
     '@/assets/scss/_mixins.scss',
