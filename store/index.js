@@ -50,7 +50,7 @@ export default {
         },
         {
           color: 'черный',
-          colorCode: '#000000;',
+          colorCode: '#000000',
           sliderPhotos: [
             {
               id: 1,
