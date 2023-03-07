@@ -61,6 +61,7 @@ export default {
     font-size: 10px;
     line-height: 14px;
     color: $gray;
+    max-width: 362px;
   }
   .plus {
     margin-right: 12px;
