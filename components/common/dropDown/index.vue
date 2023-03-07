@@ -43,6 +43,7 @@ export default {
 
 <style lang="scss" scoped>
 @import 'assets/scss/variables';
+@import 'assets/scss/mixins';
 
 .drop-down {
   .drop-down-btn {
@@ -89,6 +90,11 @@ export default {
     height: 0 !important;
     margin: 0;
     overflow: hidden;
+  }
+  @include sm {
+     .drop-down-text {
+      max-width: 100%;
+     }
   }
 }
 </style>
