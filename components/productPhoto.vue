@@ -1,7 +1,7 @@
 <template>
   <div class="product-photo">
     <div class="slider">
-      <SliderVue :activeColor="activeColor" :product="product"/>
+      <SliderVue :product="product" :activeColor="activeColor" />
     </div>
     <div class="small-photos">
       <img :class="{ active: activePhotoIndex === index }" :src="item.bigImg" v-for="(item, index) in slider" :key="item.index" @click="activePhotoIndex = index">
