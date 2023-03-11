@@ -1,7 +1,7 @@
 <template>
   <div class="product-photo">
     <div class="slider">
-      <SliderVue :activeColor="activeColor"/>
+      <SliderVue :activeColor="activeColor" :product="product"/>
     </div>
     <div class="small-photos">
       <img :class="{ active: activePhotoIndex === index }" :src="item.bigImg" v-for="(item, index) in slider" :key="item.index" @click="activePhotoIndex = index">
@@ -13,8 +13,6 @@
 <script>
 import ImageComponent from '@/components/common/image'
 import SliderVue from '@/components/common/slider'
-import { mapGetters } from 'vuex'
-
 export default {
   name: 'product-photo-component',
   components: {
@@ -23,8 +21,10 @@ export default {
   },
   props: {
     activeColor: {
-      type: Object,
-      default: () => {}
+      type: String
+    },
+    product: {
+      type: Object
     }
   },
   data() {
@@ -38,9 +38,6 @@ export default {
     }
   },
   computed: {
-    ...mapGetters({
-      product: 'getProduct',
-    }),
     activePhoto() {
       return this.product.details.filter(item => item.color === this.activeColor)[0]?.sliderPhotos[this.activePhotoIndex]
     },

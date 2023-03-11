@@ -1,7 +1,7 @@
 <template>
   <div class="product-oreder-wraper">
     <div class="product-oreder-photo">
-      <ProductPhoto :activeColor="activeColor"/>
+      <ProductPhoto :activeColor="activeColor" :product="product"/>
     </div>
     <div class="product-order">
       <div class="title-group">
@@ -62,9 +62,9 @@
 </template>
 
 <script>
-import { mapGetters, mapMutations } from 'vuex'
 import DropDown from '@/components/common/dropDown'
 import ProductPhoto from '@/components/productPhoto.vue'
+import data from '@/data.json'
 
 export default {
   name: 'producOrderComponent',
@@ -75,12 +75,10 @@ export default {
   data() {
     return {
       activeColor: null,
+      product: data.product
     }
   },
   computed: {
-    ...mapGetters({
-      product: 'getProduct'
-    }),
     activeProduct() {
       return this.product.details.filter(item => item.color === this.activeColor)[0]
     }

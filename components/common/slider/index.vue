@@ -1,7 +1,7 @@
 <template>
   <div>
-    <swiper :slides-per-view="1" :pagination="true" :loop="false" :space-between="30"  @swiper="onSwiper" @slideChange="onSlideChange">
-      <swiper-slide class="slide" v-for="item in slider" :key="item">
+    <swiper :slides-per-view="1" :pagination="true" :loop="false" :space-between="30">
+      <swiper-slide class="slide" v-for="(item, index) in slider" :key="index">
        <img :src="item.smallImg" class="imgage">
       </swiper-slide>
     </swiper>
@@ -11,8 +11,8 @@
 <script>
 import { Pagination } from 'swiper'
 import { SwiperCore, Swiper, SwiperSlide } from 'swiper-vue2'
-import { mapGetters } from 'vuex'
 import ImageComponent from '@/components/common/image'
+import data from '@/data.json'
 // Import Swiper styles
 import '@/assets/scss/swiper-bundle.css'
 
@@ -24,29 +24,22 @@ export default {
     SwiperSlide,
     ImageComponent
   },
+  data() {
+    return {
+      product: data.product
+    }
+  },
   props: {
     activeColor: {
-      type: Object,
-      default: () => {}
+      type: String,
     }
   },
   computed: {
-    ...mapGetters({
-      product: 'getProduct'
-    }),
     activePhoto() {
       return this.product.details.filter(item => item.color === this.activeColor)[0]?.sliderPhotos[this.activePhotoIndex]
     },
     slider() {
       return this.product.details.filter(item => item.color === this.activeColor)[0]?.sliderPhotos
-    }
-  },
-  methods: {
-    onSwiper (swiper) {
-      console.log(swiper)
-    },
-    onSlideChange () {
-      console.log('slide change')
     }
   }
 }

@@ -18,20 +18,17 @@
 
 <script>
 import ImageComponent from '@/components/common/image'
+import data from '@/data.json'
 
-import { mapGetters } from 'vuex'
   export default {
     name: 'similar-products-component',
     components: {
       ImageComponent
     },
-    computed: {
-      ...mapGetters({
-        similarProducts: 'getSimilarProducts'
-      })
-    },
-    mounted() {
-      console.log(this.similarProducts)
+    data() {
+      return {
+        similarProducts: data.similarProducts
+      }
     }
   }
 </script>
