@@ -4,7 +4,7 @@
       <div>
         {{ data.title }}
       </div>
-        <img class="plus" :class="{ rotate: show }" src="/plus.png" alt="">
+        <img class="plus" :class="{ rotate: show }" src="/icons/plus.png" alt="">
     </div>
     <Transition name="dropdown"
       @enter="startTransition"
@@ -66,6 +66,8 @@ export default {
   }
   .plus {
     margin-right: 12px;
+    height: 12px;
+    width: 12px;
     transition: all .3s ease;
   }
   .rotate{

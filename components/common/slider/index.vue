@@ -24,10 +24,15 @@ export default {
     SwiperSlide,
     ImageComponent
   },
+  props: {
+    activeColor: {
+      type: Object,
+      default: () => {}
+    }
+  },
   computed: {
     ...mapGetters({
-      product: 'getProduct',
-      activeColor: 'getActiveColor'
+      product: 'getProduct'
     }),
     activePhoto() {
       return this.product.details.filter(item => item.color === this.activeColor)[0]?.sliderPhotos[this.activePhotoIndex]

@@ -37,8 +37,7 @@ import { mapGetters } from 'vuex'
 </script>
 
 <style lang="scss" scoped>
-  @import 'assets/scss/variables';
-  @import 'assets/scss/mixins';
+@import 'assets/scss/index.scss';
   
   .similar-products {
     margin: 40px;

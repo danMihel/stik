@@ -2,12 +2,7 @@
   <div class="cart">
     <vHeader/>
     <div class="main-content">
-      <div class="product-photo">
-        <ProductPhoto/>
-      </div>
-      <div class="oreder-product">
-        <ProductOrder/>
-      </div>
+      <ProductOrder/>
     </div>
     <div class="similar">
       <SimilarProducts/>

@@ -1,7 +1,7 @@
 <template>
   <div class="product-photo">
     <div class="slider">
-      <SliderVue/>
+      <SliderVue :activeColor="activeColor"/>
     </div>
     <div class="small-photos">
       <img :class="{ active: activePhotoIndex === index }" :src="item.bigImg" v-for="(item, index) in slider" :key="item.index" @click="activePhotoIndex = index">
@@ -21,6 +21,12 @@ export default {
     ImageComponent,
     SliderVue
   },
+  props: {
+    activeColor: {
+      type: Object,
+      default: () => {}
+    }
+  },
   data() {
     return {
       activePhotoIndex: 0
@@ -34,7 +40,6 @@ export default {
   computed: {
     ...mapGetters({
       product: 'getProduct',
-      activeColor: 'getActiveColor'
     }),
     activePhoto() {
       return this.product.details.filter(item => item.color === this.activeColor)[0]?.sliderPhotos[this.activePhotoIndex]
@@ -47,7 +52,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import 'assets/scss/mixins';
+@import 'assets/scss/index.scss';
 
   .product-photo {
     display: flex;
