@@ -19,18 +19,18 @@ export default {
           sliderPhotos: [
             {
               id: 1,
-              bigImg: '/white-jacket.png',
-              smallImg: '/white-jacket-small.png'
+              bigImg: '/photos/white-jacket.png',
+              smallImg: '/photos/white-jacket-small.png'
             },
             {
               id: 2,
-              bigImg: '/white-jacket2.png',
-              smallImg: '/white-jacket2.png'
+              bigImg: '/photos/white-jacket2.png',
+              smallImg: '/photos/white-jacket2.png'
             },
             {
               id: 3,
-              bigImg: '/white-jacket3.png',
-              smallImg: '/white-jacket3.png'
+              bigImg: '/photos/white-jacket3.png',
+              smallImg: '/photos/white-jacket3.png'
             }
           ],
           sizes: [
@@ -54,18 +54,18 @@ export default {
           sliderPhotos: [
             {
               id: 1,
-              bigImg: '/black-jacket.jpg',
-              smallImg: '/black-jacket.jpg'
+              bigImg: '/photos/black-jacket.jpg',
+              smallImg: '/photos/black-jacket.jpg'
             },
             {
               id: 2,
-              bigImg: '/black-jacket2.png',
-              smallImg: '/black-jacket2.png'
+              bigImg: '/photos/black-jacket2.png',
+              smallImg: '/photos/black-jacket2.png'
             },
             {
               id: 3,
-              bigImg: '/black-jacket3.png',
-              smallImg: '/black-jacket3.png'
+              bigImg: '/photos/black-jacket3.png',
+              smallImg: '/photos/black-jacket3.png'
             }
           ],
           sizes: [
@@ -89,18 +89,18 @@ export default {
           sliderPhotos: [
             {
               id: 1,
-              bigImg: '/beige-jacket.jpg',
-              smallImg: '/beige-jacket.jpg'
+              bigImg: '/photos/beige-jacket.jpg',
+              smallImg: '/photos/beige-jacket.jpg'
             },
             {
               id: 2,
-              bigImg: '/beige-jacket2.png',
-              smallImg: '/beige-jacket2.png'
+              bigImg: '/photos/beige-jacket2.png',
+              smallImg: '/photos/beige-jacket2.png'
             },
             {
               id: 2,
-              bigImg: '/beige-jacket3.jpg',
-              smallImg: '/beige-jacket3.jpg'
+              bigImg: '/photos/beige-jacket3.jpg',
+              smallImg: '/photos/beige-jacket3.jpg'
             }
           ],
           sizes: [
@@ -126,32 +126,32 @@ export default {
         price: '14 900 RUB',
         oldPrice: '8 000 RUB',
         photo: {
-          bigImg: '/cut-out-dress.png',
-          smallImg: '/cut-out-dress-small.png'
+          bigImg: '/photos/cut-out-dress.png',
+          smallImg: '/photos/cut-out-dress-small.png'
         }
       },
       {
         title: 'ЖАКЕТ ДВУБОРТНЫЙ, СЕРО-ГОЛУБОЙ',
         price: '8 900 RUB',
         photo: {
-          bigImg: '/jacket.png',
-          smallImg: '/jacket-small.png'
+          bigImg: '/photos/jacket.png',
+          smallImg: '/photos/jacket-small.png'
         }
       },
       {
         title: 'ПЛАТЬЕ МАКСИ С ЯРУСАМИ, БЕЛЫЙ',
         price: '10 500 RUB',
         photo: {
-          bigImg: '/tiered-dress.png',
-          smallImg: '/jacket-small.png'
+          bigImg: '/photos/tiered-dress.png',
+          smallImg: '/photos/jacket-small.png'
         }
       },
       {
         title: 'КОМБИНЕЗОН СО СТОЙКОЙ, ЧёРНЫЙ',
         price: '9 500 RUB',
         photo: {
-          bigImg: '/overalls.png',
-          smallImg: '/cut-out-dress-small.png'
+          bigImg: '/photos/overalls.png',
+          smallImg: '/photos/cut-out-dress-small.png'
         }
       }
     ] 

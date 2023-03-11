@@ -6,7 +6,7 @@
         <span class="price"> {{ product.price }} </span>
       </div> 
       <div class="stroke">
-        <img :src="'/stroke.png'"/>
+        <img :src="'/icons/stroke.png'"/>
       </div>
     </div>
     <div class="size">
@@ -42,7 +42,7 @@
         <div class="add-btn-text">добавить в корзину</div>
       </div>
       <div class="stroke-bn">
-        <img src="/stroke.png" alt="">
+        <img src="/icons/stroke.png" alt="">
       </div>
     </div>
     <div class="accordion">

@@ -2,21 +2,21 @@
   <div class="header">
      <div class="logo">
       <picture>
-        <source :srcset="'/logo-small.png'" media="(max-width: 750px)">
-        <img :src="'/logo.png'">
+        <source :srcset="'/icons/logo-small.png'" media="(max-width: 750px)">
+        <img :src="'/icons/logo.png'">
       </picture>
      </div>
       <div class="icon search">
-        <img :src="'/search.png'">
+        <img :src="'/icons/search.png'">
       </div>
       <div class="icon stroke">
-        <img :src="'/stroke.png'"/>
+        <img :src="'/icons/stroke.png'"/>
       </div>
       <div class="icon user">
-        <img :src="'/user.png'"/>
+        <img :src="'/icons/user.png'"/>
       </div>
       <div class="icon basket">
-       <img :src="'/basket.png'"/>
+       <img :src="'/icons/basket.png'"/>
       </div>
   </div>
 </template>

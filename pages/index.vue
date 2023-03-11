@@ -1,33 +1,33 @@
 <template>
   <div class="cart">
-    <HeaderComponent/>
+    <vHeader/>
     <div class="main-content">
       <div class="product-photo">
-        <ProductPhotoComponent/>
+        <ProductPhoto/>
       </div>
       <div class="oreder-product">
-        <ProducOrderComponent/>
+        <ProductOrder/>
       </div>
     </div>
     <div class="similar">
-      <SimilarProductsComponent/>
+      <SimilarProducts/>
     </div>
   </div>
 </template>
 
 <script>
-import HeaderComponent from "@/components/headerComponent.vue"
-import ProducOrderComponent from '@/components/producOrderComponent.vue'
-import ProductPhotoComponent from '@/components/productPhotoComponent.vue'
-import SimilarProductsComponent from '@/components/similarProductsComponent.vue'
+import vHeader from "@/components/header.vue"
+import ProductOrder from '@/components/productOrder.vue'
+import ProductPhoto from '@/components/productPhoto.vue'
+import SimilarProducts from '@/components/similarProducts.vue'
 
 export default {
   name: 'index-page',
   components: {
-    HeaderComponent,
-    ProducOrderComponent,
-    ProductPhotoComponent,
-    SimilarProductsComponent,
+    vHeader,
+    ProductOrder,
+    ProductPhoto,
+    SimilarProducts,
   }
 }
 </script>

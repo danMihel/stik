@@ -12,7 +12,7 @@
 
 <script>
 import ImageComponent from '@/components/common/image'
-import SliderVue from '@/components/slider.vue'
+import SliderVue from '@/components/common/slider'
 import { mapGetters } from 'vuex'
 
 export default {
