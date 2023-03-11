@@ -1,6 +1,5 @@
 export default {
   state: () => ({
-    activeColor: null,
     product: {
       title: 'жакет удлинённый',
       price: '8 900 RUB',
@@ -160,16 +159,8 @@ export default {
     getProduct(state) {
       return state.product
     },
-    getActiveColor(state) {
-      return state.activeColor
-    },
     getSimilarProducts(state) {
       return state.similarProducts
     }
-  },
-  mutations: {
-    setActiveColor (state, value) {
-      state.activeColor = value
-    }
-  } 
+  }
 }
