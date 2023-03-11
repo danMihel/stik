@@ -17,11 +17,11 @@
         <span>Размеры</span>
         <div class="size-btn-group" v-if="activeProduct">
           <div v-for="item in activeProduct?.sizes" :key="item.size">
-            <div v-if="(item.quantity <= 10 && item.quantity !==0)">
+            <div v-if="(item.quantity <= lowLimit && item.quantity !==0)">
               <div class="size-btn"> {{ item.size }} </div>
               <div class="caption">мало</div>
             </div>
-            <div v-if="item.quantity > 10">
+            <div v-if="item.quantity > lowLimit">
               <div class="size-btn"> {{ item.size }} </div>
             </div>
             <div v-if="(item.quantity === 0)">
@@ -75,7 +75,8 @@ export default {
   data() {
     return {
       activeColor: null,
-      product: data.product
+      product: data.product,
+      lowLimit: 10
     }
   },
   computed: {
