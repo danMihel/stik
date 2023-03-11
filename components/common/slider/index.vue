@@ -12,7 +12,6 @@
 import { Pagination } from 'swiper'
 import { SwiperCore, Swiper, SwiperSlide } from 'swiper-vue2'
 import ImageComponent from '@/components/common/image'
-import data from '@/data.json'
 // Import Swiper styles
 import '@/assets/scss/swiper-bundle.css'
 
@@ -24,14 +23,12 @@ export default {
     SwiperSlide,
     ImageComponent
   },
-  data() {
-    return {
-      product: data.product
-    }
-  },
   props: {
     activeColor: {
-      type: String,
+      type: String
+    },
+    product: {
+      type: Object
     }
   },
   computed: {
