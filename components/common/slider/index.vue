@@ -1,7 +1,7 @@
 <template>
   <div>
     <swiper :slides-per-view="1" :pagination="true" :loop="false" :space-between="30">
-      <swiper-slide class="slide" v-for="(item, index) in slider" :key="index">
+      <swiper-slide class="slide" v-for="(item) in slider" :key="item.id">
        <img :src="item.smallImg" class="imgage">
       </swiper-slide>
     </swiper>
@@ -32,13 +32,10 @@ export default {
     }
   },
   computed: {
-    activePhoto() {
-      return this.product.details.filter(item => item.color === this.activeColor)[0]?.sliderPhotos[this.activePhotoIndex]
-    },
     slider() {
       return this.product.details.filter(item => item.color === this.activeColor)[0]?.sliderPhotos
     }
-  }
+  },
 }
 </script>
 

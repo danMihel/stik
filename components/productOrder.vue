@@ -89,7 +89,7 @@ export default {
       return this.activeColor = value
     }
   },
-  mounted () {
+  created () {
     this.setActiveColor(this.product.details[0].color)
   }
 }
